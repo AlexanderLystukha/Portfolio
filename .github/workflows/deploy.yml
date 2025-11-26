@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master] # Change to 'master' if that's your default branch
+    branches: [main] # Change to 'master' if that's your default branch
   workflow_dispatch:
 
 permissions:
@@ -28,6 +28,15 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # DEBUG: List what's in the dist folder
+      - name: Debug - List dist contents
+        run: |
+          echo "Contents of dist folder:"
+          ls -la dist/
+          echo "---"
+          echo "Tree view of dist:"
+          find dist/ -type f
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
