@@ -1,4 +1,10 @@
-@import url("https://fontlibrary.org//face/cmu-typewriter");
+@font-face {
+  font-family: 'CMUTypewriterTextRegular';
+  src: url('../assets/fonts/cmuntt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 h1 {
   font-weight: 700;
@@ -6,7 +12,7 @@ h1 {
 
 p,
 a {
-  font-family: "CMUTypewriterTextRegular", sans-serif;
+  font-family: "CMUTypewriterTextRegular", "Courier New", Courier, monospace;
   font-size: $default-font-size;
 }
 
