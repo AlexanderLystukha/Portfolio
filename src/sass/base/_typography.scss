@@ -1,4 +1,4 @@
-@import url("https://fontlibrary.org//face/cmu-typewriter");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 h1 {
   font-weight: 700;
@@ -6,7 +6,7 @@ h1 {
 
 p,
 a {
-  font-family: "CMUTypewriterTextRegular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: $default-font-size;
 }
 
